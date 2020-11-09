@@ -33,14 +33,13 @@ public class Julia extends Thread {
                 float level;
                 if (k < CUTOFF) {
                     level = ((float) k / CUTOFF);
-                    Color c = new Color(level, 0, 0); // zielony
+                    Color c = new Color(level, 0, 0); // czerwony
                     img.setRGB(i, j, c.getRGB());
                 } else {
                     level = 0;
                     Color c = new Color(0, level, 1F); // niebieski
                     img.setRGB(i, j, c.getRGB());
                 }
-                level=0;
             }
         }
 // zapis do pliku
